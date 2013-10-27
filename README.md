@@ -5,8 +5,8 @@ folks at [mozfest](http://mozillafestival.org/) to hack together some playable c
 
 # Instructions (maybe?)
 
-Install the Quneo OSC Bridge abd toggle on OSC Out on port 9999.
-Start an OSC server to transmit Quneo data to the web.
+Install the Quneo OSC Bridge and toggle on OSC Out with port 9999.
+Start an OSC server to transmit QuNeo data to the web.
 
     cd server
     npm install
@@ -18,4 +18,4 @@ Start a test web page.
     npm install
     npm start
 
-Open it in a browser. Activate Quneo default preset 1. Tap on the Quneo pads.
+Open it in a browser. Activate QuNeo default preset 1. Tap on the QuNeo pads.
