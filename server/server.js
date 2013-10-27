@@ -30,10 +30,20 @@ oscServer.on("message", function (msg, rinfo) {
 
   var drum = path.match(/^\/quneo\/pads\/([0-9]+)\/drum\/note_velocity/);
   var vslider = path.match(/^\/quneo\/vSliders\/([0-9]+)\/location/);
+  var longSlider = path.match(/^\/quneo\/longSlider\/location/);
+  var downButton = path.match(/^\/quneo\/downButton\/([0-9]+)\/note_velocity/);
+  var upButton = path.match(/^\/quneo\/upButton\/([0-9]+)\/note_velocity/);
+
   if (drum) {
     quneo.emit('play', {type: 'drum', data: {id: drum[1], velocity: value}});
   } else if (vslider) {
     quneo.emit('play', {type: 'vslider', data: {id: vslider[1], location: value}});
+  } else if (longSlider) {
+    quneo.emit('play', {type: 'longSlider', data: {location: value}});
+  } else if (downButton) {
+    quneo.emit('play', {type: 'downButton', data: {id: downButton[1], velocity: value}});
+  } else if (upButton) {
+    quneo.emit('play', {type: 'upButton', data: {id: upButton[1], velocity: value}});
   } else {
     // Unhandled events.
     //console.log('        ' + msg);

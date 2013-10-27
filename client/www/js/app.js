@@ -11,6 +11,12 @@
       console.log(evt.type, evt.data.id, evt.data.velocity);
     } else if (evt.type === 'vslider') {
       console.log(evt.type, evt.data.id, evt.data.location);
+    } else if (evt.type === 'longSlider') {
+      console.log(evt.type, evt.data.location);
+    } else if (evt.type === 'upButton') {
+      console.log(evt.type, evt.data.id, evt.data.velocity);
+    } else if (evt.type === 'downButton') {
+      console.log(evt.type, evt.data.id, evt.data.velocity);
     } else {
       console.log('unknown', evt.type, evt.data);
     }
