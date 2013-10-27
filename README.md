@@ -3,7 +3,7 @@ to the web. Currently I'm working with [appmaker](http://appmaker.mozillalabs.co
 folks at [mozfest](http://mozillafestival.org/) to hack together some playable components.
 
 
-h1. Instructions (maybe?)
+# Instructions (maybe?)
 
 Install the Quneo OSC Bridge abd toggle on OSC Out on port 9999.
 Start an OSC server to transmit Quneo data to the web.
