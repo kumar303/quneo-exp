@@ -1,0 +1,11 @@
+{
+  "name": "queno",
+  "version": "0.0.1",
+  "private": true,
+  "description": "",
+  "dependencies": {
+    "quneo": "",
+    "node-osc": "",
+    "socket.io": ""
+  }
+}
